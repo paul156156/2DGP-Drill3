@@ -6,15 +6,19 @@ grass = load_image('grass.png')
 boy = load_image('character.png')
 
 def run_circle():
-    print('circle')
-    pass
+    print('CIRCLE')
+
+    clear_canvas_now()
+    boy.draw_now(400,300)
+    delay(0.1)
 
 def run_rectangle():
-    print('rectangle')
+    print('RECTANGLE')
     pass
 
 while True:
     run_rectangle()
     run_circle()
+    break
 
 close_canvas()
