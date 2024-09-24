@@ -57,9 +57,31 @@ def run_rectangle():
     run_left()
     pass
 
+def run_cross():
+    print('CROSS')
+
+    x = 50
+    y = 550
+    while True:
+        draw_boy(x,y)
+        x = x + 15
+        y = y - 10
+
+        if x == 800:
+            break
+            
+    pass
+        
+def run_triangle():
+    print('TRIANGLE')
+    run_bottom()
+    run_left()
+    run_cross()
+    
 while True:
     run_circle()
     run_rectangle()
+    run_triangle()
     #break
 
 close_canvas()
